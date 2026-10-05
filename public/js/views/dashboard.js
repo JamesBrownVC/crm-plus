@@ -65,9 +65,9 @@ export async function render(el) {
 
   if (isEmpty) {
     el.append(h('div', { class: 'card' }, emptyState(
-      'Your network is empty',
-      'Import your LinkedIn connections to fill it, or add the people you have already met by hand.',
-      h('button', { class: 'primary', onclick: () => navigate('#/settings') }, icon('plus'), 'Import from LinkedIn'),
+      'Start your working roster',
+      'Add people you work with, or review imported contacts in People → Suggested and add them to your roster.',
+      h('button', { class: 'primary', onclick: () => navigate('#/people') }, icon('plus'), 'Open People'),
     )));
     return;
   }
@@ -635,4 +635,3 @@ function priorityRows(p, i, total) {
     note: 'score = priority × stage weight × min(staleness, 3)',
   };
 }
-
