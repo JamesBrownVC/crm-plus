@@ -1,0 +1,29 @@
+# Local databases and private working files
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+data/
+private/
+.env
+.env.*
+!.env.example
+
+# Exported contact and message data
+Connections.csv
+connections.csv
+messages.csv
+Messages.csv
+*LinkedIn*.csv
+*linkedin*.csv
+*LinkedIn*.zip
+*linkedin*.zip
+
+# Dependencies and build output
+node_modules/
+.claude/
+tmp-*.mjs
+dist/
+.build/
+eval/sample.json
+eval/labels.json
